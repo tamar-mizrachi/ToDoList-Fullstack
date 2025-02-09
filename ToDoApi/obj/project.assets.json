@@ -1443,11 +1443,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user1\\Documents\\תכנות תמי\\תכנות תשפה\\פרקטיקוד\\ToDoList FullStack\\ToDoApi\\ToDoApi.csproj",
+      "projectUniqueName": "C:\\Users\\user1\\Documents\\תכנות תמי\\תכנות תשפה\\ToDoList-Fullstack\\ToDoApi\\ToDoApi.csproj",
       "projectName": "ToDoApi",
-      "projectPath": "C:\\Users\\user1\\Documents\\תכנות תמי\\תכנות תשפה\\פרקטיקוד\\ToDoList FullStack\\ToDoApi\\ToDoApi.csproj",
+      "projectPath": "C:\\Users\\user1\\Documents\\תכנות תמי\\תכנות תשפה\\ToDoList-Fullstack\\ToDoApi\\ToDoApi.csproj",
       "packagesPath": "C:\\Users\\user1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user1\\Documents\\תכנות תמי\\תכנות תשפה\\פרקטיקוד\\ToDoList FullStack\\ToDoApi\\obj\\",
+      "outputPath": "C:\\Users\\user1\\Documents\\תכנות תמי\\תכנות תשפה\\ToDoList-Fullstack\\ToDoApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user1\\AppData\\Roaming\\NuGet\\NuGet.Config",
