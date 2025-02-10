@@ -62,5 +62,6 @@ app.MapDelete("/items/{id}",async (int id,ToDoDbContext db)=>{
      return Results.Ok();
     });
     app.MapGet("/",()=>"Authserver API is running");
+    
 app.Run();
 
