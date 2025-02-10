@@ -15,7 +15,11 @@ builder.Services.AddCors(options =>
         });
 });
 
-builder.Services.AddDbContext<ToDoDbContext>();
+var connectionString = builder.Configuration.GetConnectionString("ToDoDB");
+builder.Services.AddDbContext<ToDoDbContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
+);
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -57,5 +61,6 @@ app.MapDelete("/items/{id}",async (int id,ToDoDbContext db)=>{
      await db.SaveChangesAsync();
      return Results.Ok();
     });
+    app.MapGet("/",()=>"Authserver API is running");
 app.Run();
 
