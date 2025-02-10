@@ -13,7 +13,8 @@
   "description": "",
   "dependencies": {
     "@api/render-api": "file:.api/apis/render-api",
-    "api": "^6.1.2",
-    "express": "^4.21.2"
+    "api": "^5.0.5",
+    "express": "^4.21.2",
+    "openapi-types": "^12.1.3"
   }
 }
