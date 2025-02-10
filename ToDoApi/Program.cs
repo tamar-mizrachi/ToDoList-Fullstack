@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
+Console.WriteLine("🚀 Server is starting...");
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
@@ -62,6 +62,7 @@ app.MapDelete("/items/{id}",async (int id,ToDoDbContext db)=>{
      return Results.Ok();
     });
     app.MapGet("/",()=>"Authserver API is running");
-    
+    var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+app.Urls.Add($"http://+:{port}");
 app.Run();
 
