@@ -1,0 +1,17 @@
+C:\app\publish\ToDoApi.exe
+C:\app\publish\appsettings.Development.json
+C:\app\publish\appsettings.json
+C:\app\publish\global.json
+C:\app\publish\ToDoApi.dll
+C:\app\publish\ToDoApi.runtimeconfig.json
+C:\app\publish\ToDoApi.pdb
+C:\app\publish\Microsoft.EntityFrameworkCore.dll
+C:\app\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\app\publish\Microsoft.EntityFrameworkCore.Relational.dll
+C:\app\publish\Microsoft.OpenApi.dll
+C:\app\publish\MySqlConnector.dll
+C:\app\publish\Pomelo.EntityFrameworkCore.MySql.dll
+C:\app\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\app\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\app\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\app\publish\ToDoApi.deps.json

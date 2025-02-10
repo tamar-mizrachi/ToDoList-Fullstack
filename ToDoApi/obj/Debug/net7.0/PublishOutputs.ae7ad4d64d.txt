@@ -1,0 +1,17 @@
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\ToDoApi.exe
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\appsettings.Development.json
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\appsettings.json
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\global.json
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\ToDoApi.dll
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\ToDoApi.runtimeconfig.json
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\ToDoApi.pdb
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\Microsoft.EntityFrameworkCore.dll
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\Microsoft.OpenApi.dll
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\MySqlConnector.dll
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\user1\Documents\תכנות תמי\תכנות תשפה\ToDoList-Fullstack\ToDoApi\bin\Debug\net7.0\publish\ToDoApi.deps.json
