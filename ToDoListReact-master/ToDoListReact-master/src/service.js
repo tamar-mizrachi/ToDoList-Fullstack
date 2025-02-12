@@ -1,50 +1,58 @@
 import axios from 'axios';
 
-const apiUrl = process.env.REACT_APP_API_URL;
-axios.defaults.baseURL = apiUrl;
+console.log(config.apiUrl);
 
 // Interceptor לטיפול בשגיאות
 axios.interceptors.response.use(
-  (response) => response, // אם אין שגיאה – מחזירים את התגובה כמות שהיא
-  (error) => {
-    console.error('Axios Error:', error.response?.status, error.message);
-    return Promise.reject(error);
+  response => {
+    return response;
+  },
+  error => {
+    console.error('API Error:', error); 
+    console.log("good");
+    
+    return Promise.reject(error); 
   }
 );
 
 export default {
-  getTasks: async () => {
-    const result = await axios.get(`${apiUrl}/items`)    
-    return result.data;
-  },
+    getTasks: async () => {
+      try {
+        const result = await axios.get(`${config.apiUrl}/items`);
+        console.log(result.data);
+        
+        return result.data;
+      } catch (err) {
+        console.error(err);
+      }
+    },
+    addTask: async (name) => {
+      console.log('addTask', name);
+      try {
+        const result = await axios.post(`${config.apiUrl}/items`, { name: name, isComplete: false });
+        return result.data; 
+      } catch (err) {
+        console.error("Error", err);
+      }
+    },
 
-  addTask: async(name)=>{
-    console.log('addTask', name)
-    try {
-      const result = await axios.post('/items', { name });
-      return result.data;
-    } catch (error) {
-      console.error('Failed to add task:', error);
+    setCompleted: async (id, isComplete) => {
+      console.log('setCompleted', { id, isComplete });
+      try {
+        const result = await axios.put(`${config.apiUrl}/items/${id}`, { isComplete: isComplete });
+        return result.data;
+      } catch (err) {
+        console.error("Error", err);
+      }
+    },
+    deleteTask: async (id) => {
+      console.log('deleteTask');
+      try {
+        const result = await axios.delete(`${config.apiUrl}/items/${id}`);
+        return result.data;
+      } catch (err) {
+        console.error("Error", err);
+      }
     }
-  },
-
-  setCompleted: async (id, isComplete) => {
-    console.log('setCompleted', { id, isComplete });
-    try {
-      const result = await axios.put(`/items/${id}`, { isComplete });
-      return result.data;
-    } catch (error) {
-      console.error('Failed to set task completion:', error);
-    }
-  },
-  deleteTask: async (id) => {
-    console.log('deleteTask', id);
-    try {
-      const result = await axios.delete(`/items/${id}`);
-      return result.data;
-    } catch (error) {
-      console.error('Failed to delete task:', error);
-    }
-  }
 
 };
