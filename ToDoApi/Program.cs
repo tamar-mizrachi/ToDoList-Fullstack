@@ -7,34 +7,30 @@ Console.WriteLine("🚀 Server is starting...");
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
-        policy =>
+        builder =>
         {
-            policy.AllowAnyOrigin()    
-                  .AllowAnyHeader()   
-                  .AllowAnyMethod();  
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
         });
 });
 
-var connectionString = builder.Configuration.GetConnectionString("ToDoDB");
 builder.Services.AddDbContext<ToDoDbContext>(options =>
-    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
-);
+    options.UseMySql(builder.Configuration.GetConnectionString("ToDoDB"), 
+    ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("ToDoDB"))));
 
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "ToDoApi", Version = "v1" });
-});
+builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 app.UseCors("AllowAll");
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+// }
 
-app.UseCors("AllowAll");
+// app.UseCors("AllowAll");
 app.MapGet("/items",async (ToDoDbContext db)=> {return await db.Items.ToListAsync();});
 app.MapPost("/items",async (ToDoDbContext db,Item newItem)=>{
     db.Items.Add(newItem);
@@ -62,7 +58,7 @@ app.MapDelete("/items/{id}",async (int id,ToDoDbContext db)=>{
      return Results.Ok();
     });
     app.MapGet("/",()=>"Authserver API is running");
-    var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
-app.Urls.Add($"http://+:{port}");
+//     var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+// app.Urls.Add($"http://+:{port}");
 app.Run();
 
