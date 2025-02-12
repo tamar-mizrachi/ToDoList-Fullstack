@@ -1,5 +1,5 @@
-const config ={
-    apiUrl: process.env.REACT_APP_API_URL // כתובת ה-API
-  };
-  
-  export default config;
+const config = {
+  apiUrl: process.env.REACT_APP_API_URL || 'http://localhost:5000/api' 
+};
+
+export default config;
